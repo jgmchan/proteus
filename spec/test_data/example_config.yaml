@@ -1,0 +1,18 @@
+# Can only be equals at the moment
+- rules:
+    remote_origin: github.com
+  config:
+    user.name: jgmchan
+    user.email: jgmchan@gmail.com
+
+- rules:
+    remote_origin: git.example.com
+  config:
+    user.name: jeffrey
+    user.email: jeffrey.chan@example.com
+
+- rules:
+    remote_origin: git2.example.com
+  config:
+    user.name: jeff
+    user.email: jeff.chan@mailinator.com

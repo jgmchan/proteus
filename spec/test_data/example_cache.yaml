@@ -1,0 +1,9 @@
+0:
+  projects:
+    - '~/scm/test1'
+    - '~/scm/test2'
+1:
+  projects:
+    - '~/scm/test3'
+    - '~/scm/test4'
+
