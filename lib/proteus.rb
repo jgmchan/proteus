@@ -1,5 +1,4 @@
-require "Proteus/version"
-require "Proteus/execute"
+require "proteus/execute"
 
 module Proteus
   # Your code goes here...
