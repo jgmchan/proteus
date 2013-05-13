@@ -8,8 +8,8 @@ Gem::Specification.new do |gem|
   gem.version       = Proteus::VERSION
   gem.authors       = ["jgmchan"]
   gem.email         = ["jgmchan@gmail.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
+  gem.description   = %q{Proteus is a simple tool to manage your multiple git configurations}
+  gem.summary       = %q{Proteus - Manage your git configs}
   gem.homepage      = ""
 
   gem.files         = `git ls-files`.split($/)
@@ -20,4 +20,7 @@ Gem::Specification.new do |gem|
   gem.add_dependency("grit")
   gem.add_dependency("gitable")
   gem.add_dependency("thor")
+
+  gem.add_development_dependency('rspec')
+  gem.add_development_dependency('guard-rspec')
 end
