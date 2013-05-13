@@ -4,7 +4,7 @@ require 'Proteus/logging'
 module Proteus
   class Config
     include Proteus::Logging
-    CONFIG_FILE = "/Users/jeff/.proteus.yml"
+    CONFIG_FILE = File.expand_path("~/.proteus.yaml")
 
     attr_accessor :config
     attr_accessor :config_file
