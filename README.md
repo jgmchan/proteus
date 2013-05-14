@@ -29,16 +29,16 @@ Install it locally:
 
 ## Usage
 
-Proteus is fairly easy to use. It requires a YAML configuration file to be located at ~/.proteus.yaml.
+Proteus requires a YAML configuration file to be located at ~/.proteus.yaml.
 This file will describe the rules to match and the git configs to apply.
 
 Sample ~/.proteus.yaml:
+
     - rules:
         remote_origin: github.com
       config:
         user.name: jgmchan
         user.email: jgmchan@gmail.com
-    
     - rules:
         remote_origin: git.example.com
       config:
