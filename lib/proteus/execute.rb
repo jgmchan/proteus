@@ -1,11 +1,9 @@
 require 'proteus/config'
 require 'proteus/rules'
-require 'proteus/logging'
 require 'grit'
 
 module Proteus
   class Execute
-    include Proteus::Logging
     def run!
       # Collect the config based on the rules
       config = nil
@@ -15,7 +13,7 @@ module Proteus
       end
       # Apply the configs
       config.each do |key, value|
-        logger.debug "Setting git local config #{key} to #{value}"
+        Logger.debug "Setting git local config #{key} to #{value}"
         self.gitrepo.config[key] = value
       end
     end
