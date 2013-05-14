@@ -10,7 +10,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["jgmchan@gmail.com"]
   gem.description   = %q{Proteus is a simple tool to manage your multiple git configurations}
   gem.summary       = %q{Proteus - Manage your git configs}
-  gem.homepage      = ""
+  gem.homepage      = "https://github.com/jgmchan/proteus"
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
