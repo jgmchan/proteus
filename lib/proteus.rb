@@ -1,5 +1,6 @@
 require "proteus/execute"
 
 module Proteus
-  # Your code goes here...
+  Logger = ::Logger.new STDOUT
+  Logger.level = ::Logger::WARN 
 end
