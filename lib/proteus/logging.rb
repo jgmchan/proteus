@@ -9,7 +9,13 @@ module Proteus
     end
 
     def get_log_level
-      Logger::DEBUG
+      loglevel = ENV['PROTEUS_LOG'] || 'FATAL'
+      begin
+        Logger.const_get(loglevel.upcase)
+      rescue
+        $stderr.puts "Illegal log level: #{loglevel}. Using default level FATAL"
+        Logger::FATAL
+      end
     end
 
     def create_logger
