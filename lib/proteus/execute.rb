@@ -15,7 +15,7 @@ module Proteus
       end
       # Apply the configs
       config.each do |key, value|
-        logger.debug "Setting git local config #{key} to #{value}"
+        LOGGER.debug "Setting git local config #{key} to #{value}"
         self.gitrepo.config[key] = value
       end
     end

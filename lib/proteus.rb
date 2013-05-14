@@ -1,5 +1,8 @@
 require "proteus/execute"
+require "logger"
 
 module Proteus
-  # Your code goes here...
+  LOGGER = ::Logger.new STDOUT
+  LOGGER.level = Logger::WARN
+  LOGGER.warn "Jeffrey, this is your concious"
 end
