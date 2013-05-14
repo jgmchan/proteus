@@ -14,9 +14,10 @@ module Proteus
     end
 
     desc "start", "Run proteus"
+    method_option :debug, :type => :boolean, :default => false
     def start
+      Logger.level = ::Logger::DEBUG if options[:debug]
       Proteus::Execute.new.run!
     end
   end
 end
-
