@@ -19,13 +19,9 @@ Clone this repository:
 
     git clone https://github.com/jgmchan/proteus.git
 
-Build the gem file:
+Build and install gem:
 
-    gem build proteus.gemspec
-
-Install it locally:
-   
-    gem install proteus
+    rake install
 
 ## Usage
 
