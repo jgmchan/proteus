@@ -49,12 +49,6 @@ To run proteus, go into your git repository and run:
     
     proteus start
 
-You can also alias your git command to do this automatically by adding this to your shell rc file:
-
-    alias git='proteus start || git $@'
-
-Note: This will eventually be done automatically for you when you execute `proteus init`
-
 ## Contributing
 
 1. Fork it
