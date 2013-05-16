@@ -49,6 +49,12 @@ To run proteus, go into your git repository and run:
     
     proteus start
 
+## Troubleshooting
+You can turn on logging by setting the environment variable PROTEUS_LOG to the required logging level:
+    
+    PROTEUS_LOG=debug proteus start
+    
+
 ## Contributing
 
 1. Fork it
